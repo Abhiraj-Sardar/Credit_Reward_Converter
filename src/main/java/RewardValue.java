@@ -1,4 +1,3 @@
-
 class RewardValue {
     double cash;
     float miles;
@@ -11,9 +10,10 @@ class RewardValue {
     public double getCashValue(){
         return miles*0.0035;
     }
-    public double getMilesValue(){
+    public int getMilesValue(){
         miles=(float)cash/(float)0.0035;
-        return miles;
+        return (int)miles;
     }
 
 }
+
